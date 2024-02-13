@@ -1,0 +1,172 @@
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url(images/bandera.jpg);
+    background-color: grey;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 45px;
+    margin-left: 50px;
+}
+
+div ul {
+    list-style-type: none;
+    display: inline;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+div ul li a:hover {
+    color: #ffd700;
+}
+
+.container-cajas {
+    display: flex;
+}
+
+.cajaLista {
+    flex: 1;
+    background-color: #dbd8d8;
+}
+
+.cajaLista h2 {
+    text-align: center;
+    font-family: 'Lucida Sans';
+    font-size: large;
+    line-height: 5;
+}
+
+.cajaLista ul {
+    font-family: 'Lucida Sans';
+    font-size: large;
+    text-align: center;
+
+}
+
+.cajaLista ul li {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.cajaImagen {
+    flex: 1;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #dbd8d8;
+}
+
+.cajaImagen img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.flex-container {
+    background-color: #f0f0f0;
+    padding: 0;
+    text-align: center;
+    clear: both;
+}
+
+.flex-container h3 {
+    margin-bottom: 20px;
+}
+
+.tarjetas {
+    display: flex;
+}
+
+.tarjeta {
+    flex: 1 0 calc(15% - 10px);
+    border: 0.5px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.tarjeta img {
+    width: 250px;
+    height: 250px;
+    margin: 1px;
+}
+
+.form-content {
+    background-color: grey;
+    border: black double 7px;
+    padding: 6px;
+}
+
+.contenedorslider h4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.ocultar {
+    display: none;
+}
+
+.contenedorslider {
+    position: relative;
+    overflow: hidden;
+    width: 100%; 
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider img {
+    max-width: 100%; 
+    max-height: 200px;
+    width: auto; 
+    height: auto; 
+}
+
+.antes, .proximo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.antes {
+    left: 0;
+}
+
+.proximo {
+    right: 0;
+}
+
+.fa-fa-arrow {
+    width: 100px;
+    height: 100px;
+}

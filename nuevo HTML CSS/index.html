@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo de Viajar</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <script src="https://kit.fontawesome.com/99e6136eba.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Tiempo de Viajar</h1>
+        <div class="menu">
+            <ul>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <div class="container-cajas">
+            <div class="cajaLista">
+                <h2>Nuestros destinos:</h2>
+                <ul>
+                    <li>Costa Atlántica</li>
+                    <li>Córdoba</li>
+                    <li>Bariloche</li>
+                    <li>El Calafate</li>
+                    <li>Iguazú</li>
+                    <li>Mendoza</li>
+                    <li>Salta</li>
+                    <li>San Martin de los Andes</li>
+                    <li>Ushuaia</li>
+                </ul>
+
+            </div>
+            <div class="cajaImagen">
+                <img src="images/montaña.png" id="imagen" alt="imagenOriginal">
+            </div>
+    </section>
+    <section class="flex-container">
+        <h3>Destinos por Región</h3>
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <img src="images/bs as.jpg" alt="Bs As">
+                <p> Región Bs. As.
+                    <span id="textoAdicional" class="ocultar">
+                        Se recorren los barrios más tipicos de la city porteña: Recoleta, Puerto Madero, Palermo y
+                        visitaremos el Teatro Colón, el Jardín Japonés, entre otros.
+                    </span>
+                </p>
+                <button id="boton">Ver más</button>
+            </div>
+            <div class="tarjeta">
+                <img src="images/cordoba1.webp" alt="Córdoba">
+                <p> Región Córdoba
+                    <span id="textoAdicional1" class="ocultar">
+                        Las playas en la provincia de Córdoba ofrecen un marco perfecto para relajarse a la sombra de un
+                        frondoso árbol o recostado en sus inmensas rocas que emergen en sus aguas.
+                    </span>
+                </p>
+                <button id="boton1">Ver más</button>
+            </div>
+            <div class="tarjeta">
+                <img src="images/cuyo.jfif" alt="Cuyo">
+                <p> Región Cuyo
+                    <span id="textoAdicional2" class="ocultar">
+                        Es una de las regiones más lindas de la Argentina, pero a pesar de tener unos paisajes
+                        increíbles en su territorio, no se conoce mucho entre el turismo internacional, salvo por sus
+                        buenos vinos.
+                    </span>
+                </p>
+                <button id="boton2">Ver más</button>
+            </div>
+            <div class="tarjeta">
+                <img src="images/litoral.jpg" alt="litoral">
+                <p> Región Litoral
+                    <span id="textoAdicional3" class="ocultar">
+                        La extensa y exuberante riqueza natural de la región es una invitación para descubrirla. Desde
+                        el impenetrable chaqueño y los esteros del Iberá, hasta el famoso Parque Nacional Iguazú.
+                    </span>
+                </p>
+                <button id="boton3">Ver más</button>
+            </div>
+            <div class="tarjeta">
+                <img src="images/noa2.jpg" alt="Noroeste">
+                <p> Región Noroeste
+                    <span id="textoAdicional4" class="ocultar">
+                        Tierra de maravillosos contrastes. Los colores de la tierra y de los cerros se confunden en
+                        rojos intensos, ocres deslumbrantes, cielos sin nubes, sin matices, sólo de vez en cuando la
+                        silueta de algún cardón en el horizonte de una quebrada pronunciada.
+                    </span>
+                </p>
+                <button id="boton4">Ver más</button>
+            </div>
+            <div class="tarjeta">
+                <img src="images/patagonia3.jpg" alt="Patagonia">
+                <p> Región Cuyo
+                    <span id="textoAdicional5" class="ocultar">
+                        Es una de las regiones más visitadas de Argentina, por sus numerosos paisajes y ciudades y sus
+                        bellas costas. Entre los más visitados estan San Martin de los Andes, Bariloche, Esquel, El
+                        Calafate y la ciudad m{as austral: Ushuaia.}
+                    </span>
+                </p>
+                <button id="boton5">Ver más</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="contenedorslider">
+        <h4>También organizamos tu viaje al exterior...</h4>
+        <button class="antes"><i class="fa-fa-arrow-left"></i></button>
+        <div class="slider">
+
+            <img src="images/Europa.webp" alt="Europa">
+            
+            <img src="images/Caribe.jpg" alt="Caribe">
+            
+            <img src="images/Peru.jpg" alt="Perú">
+            
+            <img src="images/Brasil.jpg" alt="Brasil">
+           
+            <img src="images/cruceros.webp" alt="Cruceros">
+            
+        </div>
+        <button class="proximo"><i class="fa-fa-arrow-right"></i></button>
+    </div>
+
+    <div class="form-content">
+        <h4> ¡¡¡Dejanos tu mail para recibir promociones exclusivas!!! </h4>
+        <form id="formulario">
+            <label for="nombre"> Nombre: </label>
+            <input type="text" name="nombre" id="nombre">
+
+            <label for="email"> Email: </label>
+            <input type="text" name="email" id="email">
+
+            <input type="submit" value="ENVIAR">
+        </form>
+        <div id="mensaje"></div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
